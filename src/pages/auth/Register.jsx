@@ -18,7 +18,7 @@ export const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if([email, password].includes("")){
+    if([name, lastName, email, password, confirmPassword].includes("")){
       toast.error("🤨 Todos los campos son obligatorios", {
         theme: "dark"
       })
@@ -26,6 +26,12 @@ export const Register = () => {
     }
     if(password.length<6){
       toast.error("🤨 El password debe tener cuando menos 6 caracteres", {
+        theme: "dark"
+      })
+      return
+    }
+    if(password !== confirmPassword){
+      toast.error("😕 Los passwords son diferentes", {
         theme: "dark"
       })
       return
@@ -115,7 +121,7 @@ export const Register = () => {
           </div>
           <div className="text-right">
             <Link
-              to="olvide-password"
+              to="/olvide-password"
               className="text-gray-500 hover:text-sky-600 hover:underline transition-colors"
             >
                 ¿Olvidaste tu password?

@@ -66,7 +66,7 @@ export const Login = () => {
           </div>
           <div className="text-right -mt-2">
             <Link
-              to="olvide-password"
+              to="/olvide-password"
               className="text-gray-500 hover:text-sky-600 hover:underline transition-colors"
             >
                 ¿Olvidaste tu password?
@@ -80,7 +80,7 @@ export const Login = () => {
         </form>
         <div className="text-center">
           ¿No tienes una cuenta?{" "}
-          <Link className="text-sky-600 font-medium hover:underline transition-all" to="registro"> Regístrate</Link>
+          <Link className="text-sky-600 font-medium hover:underline transition-all" to="/registro"> Regístrate</Link>
         </div>
       </div>
     </div>

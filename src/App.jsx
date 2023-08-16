@@ -6,7 +6,7 @@ import { AuthLayout } from "./layouts/auth/AuthLayout"
 // * Pages
 import { Login } from "./pages/auth/Login"
 import { Register } from "./pages/auth/Register"
-import { ForgetPassword } from "./pages/auth/  ForgetPassword"
+import { ForgetPassword } from "./pages/auth/ForgetPassword"
 import { ChangePassword } from "./pages/auth/ChangePassword"
 import { Error404 } from "./pages/404"
 
